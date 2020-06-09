@@ -3,7 +3,7 @@
 I released my configuration under the MIT license so I can use it wherever I want and you can too!
 It only works on linux machines but you are free to modify it and adapt it to Windows or MacOS. If you are going to redistribute it, please, read the license.
 
-# How to setup it
+# How to set it up
 
 To clone the repository type:
 
