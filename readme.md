@@ -7,14 +7,20 @@ It only works on linux machines but you are free to modify it and adapt it to Wi
 
 To clone the repository type:
 
-```git clone https://github.com/atomicbitty/my-nvim-dotfiles```
+```
+git clone https://github.com/atomicbitty/my-nvim-dotfiles
+```
 
 Then copy the contents of the folder to `~/.config/nvim</code>`.
 After copying the contents, open Neovim and type this command to install the plugins:
-```:PlugInstall```
+```
+:PlugInstall
+```
 
 After that, you can install the COC plugins for syntax highlighting, to install the ones I most use, type the command:
-```:CocInstall coc-clangd coc-json```
+```
+:CocInstall coc-clangd coc-json
+```
 
 # Porting to Vim
 If you want to port it to vim, you are free, I did not test it tho.
