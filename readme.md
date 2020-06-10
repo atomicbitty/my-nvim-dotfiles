@@ -28,7 +28,7 @@ Then, you can clone the repository:
 git clone https://github.com/atomicbitty/my-nvim-dotfiles
 ```
 
-Copy the contents of the cloned repo folder to `~/.config/nvim</code>`.
+Copy the contents of the cloned repo folder to `~/.config/nvim`.
 After doing that, open Neovim, you will probably see an error, don't worry, it is normal. Press ENTER, and type this command to install the plugins:
 ```
 :PlugInstall
