@@ -40,4 +40,6 @@ After that, you can install the COC plugins for syntax highlighting, to install 
 ```
 I installed the COC extensions for clangd and json, but there are [tons of other extensions for it](https://github.com/neoclide/coc.nvim/network/dependents?dependents_before=NDA0MzM0NjQyNA).
 
+Also, if you want those beautiful fonts, [get some here](https://www.nerdfonts.com/)!
+
 ### Have fun!
