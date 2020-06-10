@@ -34,7 +34,7 @@ After doing that, open Neovim, you will probably see an error, don't worry, it i
 :PlugInstall
 ```
 
-After that, you can install the COC plugins for syntax highlighting, to install the ones I most use, type the command:
+After that, you can install the COC plugins for autocompletion, to install the ones I most use, type the command:
 ```
 :CocInstall coc-clangd coc-json
 ```
