@@ -5,14 +5,31 @@ It only works on linux machines but you are free to modify it and adapt it to Wi
 
 # How to set it up
 
-To clone the repository type:
+First of all, you need to install some dependency packages:
+
+Debian, Ubuntu:
+```
+sudo apt install nodejs npm
+```
+
+Fedora:
+```
+sudo dnf install nodejs npm
+```
+
+Arch, Manjaro:
+```
+sudo pacman -S nodejs npm
+```
+
+Then, you can clone the repository:
 
 ```
 git clone https://github.com/atomicbitty/my-nvim-dotfiles
 ```
 
-Then copy the contents of the folder to `~/.config/nvim</code>`.
-After copying the contents, open Neovim and type this command to install the plugins:
+Copy the contents of the cloned repo folder to `~/.config/nvim</code>`.
+After doing that, open Neovim, you will probably see an error, don't worry, it is normal. Press ENTER, and type this command to install the plugins:
 ```
 :PlugInstall
 ```
@@ -21,8 +38,6 @@ After that, you can install the COC plugins for syntax highlighting, to install 
 ```
 :CocInstall coc-clangd coc-json
 ```
-
-# Porting to Vim
-If you want to port it to vim, you are free, I did not test it tho.
+I installed the COC extensions for clangd and json, but there are [tons of other extensions for it](https://github.com/neoclide/coc.nvim/network/dependents?dependents_before=NDA0MzM0NjQyNA).
 
 ### Have fun!
