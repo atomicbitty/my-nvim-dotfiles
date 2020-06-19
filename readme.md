@@ -9,17 +9,17 @@ First of all, you need to install some dependency packages:
 
 Debian, Ubuntu:
 ```
-sudo apt install nodejs npm
+sudo apt install nodejs npm ccls
 ```
 
 Fedora:
 ```
-sudo dnf install nodejs npm
+sudo dnf install nodejs npm ccls
 ```
 
 Arch, Manjaro:
 ```
-sudo pacman -S nodejs npm
+sudo pacman -S nodejs npm ccls
 ```
 
 Then, you can clone the repository:
@@ -34,11 +34,39 @@ After doing that, open Neovim, you will probably see an error, don't worry, it i
 :PlugInstall
 ```
 
-After that, you can install the COC plugins for autocompletion, to install the ones I most use, type the command:
+After that, you can install the COC plugins for autocompletion, to install the one I most use, type the command:
 ```
-:CocInstall coc-clangd coc-json
+:CocInstall coc-ccls
 ```
-I installed the COC extensions for clangd and json, but there are [tons of other extensions for it](https://github.com/neoclide/coc.nvim/network/dependents?dependents_before=NDA0MzM0NjQyNA).
+
+Now, we need to configure COC to autocomplete correctly. Type `:CocConfig`, paste it, and modify it to your needs:
+```json
+{
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+                "cpp"
+            ],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            },
+            "rootPatterns": [
+                ".ccls",
+                "compile_commands.json",
+            ]
+        }
+    }
+}
+```
+The languages I most use are C and C++, so this is the configuration for those languages. 
+
+Now, To make COC key mappings work, just paste [this code](https://github.com/neoclide/coc.nvim#example-vim-configuration) to `$MYVIMRC`.
+
+I installed the COC extensions for ccls and json, but there are [tons of other extensions for it](https://github.com/neoclide/coc.nvim/network/dependents?dependents_before=NDA0MzM0NjQyNA).
 
 Also, if you want those beautiful fonts, [get some here](https://www.nerdfonts.com/)!
 
