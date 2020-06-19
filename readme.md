@@ -61,6 +61,7 @@ We need to configure COC to autocomplete correctly. Type `:CocConfig`, paste it 
 }
 ```
 The languages I most use are C and C++, so this is the configuration for those languages. 
+
 Now, to make COC key mappings work, just copy and paste [this code](https://github.com/neoclide/coc.nvim#example-vim-configuration) to your `$MYVIMRC`.
 
 ---
