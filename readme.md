@@ -22,24 +22,22 @@ Arch, Manjaro:
 sudo pacman -S nodejs npm ccls
 ```
 
-Then, you can clone the repository:
+Then, you can clone this repository:
 
 ```
 git clone https://github.com/atomicbitty/my-nvim-dotfiles
 ```
 
-Copy the contents of the cloned repo folder to `~/.config/nvim`.
-After doing that, open Neovim, you will probably see an error, don't worry, it is normal. Press ENTER, and type this command to install the plugins:
+Copy the contents of the cloned repo folder to `~/.config/nvim` and open Neovim (or Vim), you will probably see an error, don't worry, it is normal. Press ENTER, and type this command to install the plugins:
 ```
 :PlugInstall
 ```
 
-After that, you can install the COC plugins for autocompletion, to install the one I most use, type the command:
+Now you can install the COC plugins for autocompletion, to install them, type the command:
 ```
 :CocInstall coc-ccls
 ```
-
-Now, we need to configure COC to autocomplete correctly. Type `:CocConfig`, paste it, and modify it to your needs:
+We need to configure COC to autocomplete correctly. Type `:CocConfig`, paste it and modify it to your needs:
 ```json
 {
     "languageserver": {
@@ -63,10 +61,11 @@ Now, we need to configure COC to autocomplete correctly. Type `:CocConfig`, past
 }
 ```
 The languages I most use are C and C++, so this is the configuration for those languages. 
+Now, to make COC key mappings work, just copy and paste [this code](https://github.com/neoclide/coc.nvim#example-vim-configuration) to your `$MYVIMRC`.
 
-Now, To make COC key mappings work, just paste [this code](https://github.com/neoclide/coc.nvim#example-vim-configuration) to `$MYVIMRC`.
+---
 
-I installed the COC extensions for ccls and json, but there are [tons of other extensions for it](https://github.com/neoclide/coc.nvim/network/dependents?dependents_before=NDA0MzM0NjQyNA).
+If you want other COC extensions, [click here](https://github.com/neoclide/coc.nvim/network/dependents?dependents_before=NDA0MzM0NjQyNA).
 
 Also, if you want those beautiful fonts, [get some here](https://www.nerdfonts.com/)!
 
